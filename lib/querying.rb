@@ -35,7 +35,7 @@ def select_series_title_with_most_human_characters
   ON characters.series_id = series.id
   GROUP BY characters
   HAVING COUNT(*)
-  WHERE characters.species = human DESC
+  WHERE characters.species = human
   LIMIT 1"
 end
 
